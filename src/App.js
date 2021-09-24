@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Spaceships from "./components/Spaceships";
+import Spaceships from "./components/spaceship/Spaceships";
 
 function App() {
   const [listadoNaves, setListadoNaves] = useState({
