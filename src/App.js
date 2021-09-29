@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Spaceships from "./components/spaceship/Spaceships";
+import HeaderSection from "./components/header/HeaderSection";
+import { AppStyled } from "./App.styled";
+import Main from "./components/main/Main";
+import Footer from "./components/footer/footer";
 
 function App() {
   const [listadoNaves, setListadoNaves] = useState({
@@ -23,7 +26,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      if(pages < 5){
+      if (pages < 5) {
         const res = await peticion(`${url}?page=${pages}`);
         setListadoNaves((prev) => {
           return {
@@ -32,15 +35,17 @@ function App() {
           };
         });
       }
-
     })();
   }, [pages]);
 
   return (
-    <div className="App">
-      <Spaceships listadoNaves={listadoNaves} />
-      <button onClick={Handlemore}> More </button>
-    </div>
+    <AppStyled>
+      <div>
+        <HeaderSection />
+        <Main listadoNaves={listadoNaves} Handlemore={Handlemore}/>
+        <Footer />
+      </div>
+    </AppStyled>
   );
 }
 
