@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SingleSpaceshipStyled } from "./SingleSpaceship.styled";
 import { Fragment } from "react/cjs/react.production.min";
 
 export default function SingleSpaceship({
@@ -7,6 +8,8 @@ export default function SingleSpaceship({
   manufacturer,
   cost_in_credits,
   length,
+  crew,
+  passengers,
 }) {
   function handleOnclick() {
     setOpen(!open);
@@ -15,25 +18,21 @@ export default function SingleSpaceship({
   const [open, setOpen] = useState(false);
 
   return (
-    <li
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        border: "1px solid black",
-        padding: "5px",
-        margin: "2px",
-      }}
-      onClick={handleOnclick}
-    >
-      <span>name: {name}</span>
-      <span>model: {model}</span>
-      {open && (
-        <Fragment>
-          <span>manufacturer: {manufacturer}</span>
-          <span>cost in redits: {cost_in_credits}</span>
-          <span>length: {length}</span>
-        </Fragment>
-      )}
-    </li>
+    <SingleSpaceshipStyled>
+      <li onClick={handleOnclick}>
+        <h3 style={{margin:10}}>{name}</h3>
+        <span>Model: {model}</span>
+        {open && (
+          <Fragment>
+            <span>Manufacturer: {manufacturer}</span>
+            <span>Cost in redits: {cost_in_credits}</span>
+            <span>Length: {length}</span>
+            <span>Crew: {crew}</span>
+            <span>Passengers: {passengers}</span>
+          </Fragment>
+          
+        )}
+      </li>
+    </SingleSpaceshipStyled>
   );
 }
