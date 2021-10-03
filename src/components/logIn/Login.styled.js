@@ -5,6 +5,7 @@ export const LoginStyled = styled.div`
   align-items: center;
   flex-direction: column;
   font-weight: bolder;
+  padding-right: 50px;
 
   input {
     background-color: rgb(58, 41, 41);
