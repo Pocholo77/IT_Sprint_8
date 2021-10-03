@@ -21,8 +21,15 @@ export const NavBarStyled = styled.div`
   span {
     display: table-cell;
     vertical-align: middle;
+    text-decoration: none;
   }
-
+  a {
+    text-decoration: none;
+    color: #999;
+  }
+  a:hover {
+    color: white;
+  }
   div > span:hover {
     color: white;
   }
