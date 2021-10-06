@@ -17,5 +17,15 @@ export const LoginStyled = styled.div`
   .login {
     justify-content: center;
     margin-top: 5px;
+
+    & span:hover{
+      color: white;
+      cursor: pointer;
+    }
   }
+  img{
+    
+    width:100%;
+  }
+ 
 `;
