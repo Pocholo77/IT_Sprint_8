@@ -51,14 +51,16 @@ export default function Login() {
 
   function handleSignSubmit(e) {
     e.preventDefault();
-    const [mail, password] = e.target.elements;
+    const [mail, password, name, lastName, displayName] = e.target.elements;
     const emailValue = mail.value;
     const passwordValue = password.value;
-    //console.log(emailValue, passwordValue);
-
+    const nameValue = name.value;
+    const lastNameValue = lastName.value;
+    const displayNameValue = displayName.value;
+     
     localStorage.setItem(
       "user",
-      JSON.stringify({ user: emailValue, password: passwordValue })
+      JSON.stringify({ user: emailValue, password: passwordValue, name: nameValue, lastName:lastNameValue, displayName: displayNameValue  })
     );
     handleLogClose();
     console.log("Hi!" + emailValue + " You're connected");
