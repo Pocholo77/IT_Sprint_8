@@ -1,29 +1,71 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.div`
- background-color: black;
- background-image: url('https://static-mh.content.disney.io/starwars/assets/footer/vader_2-86e8fdb4e26d.jpg');
- background-repeat: no-repeat;
- height: 30vh;
- width: 100%;
+  background-color: black;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
- .box1{
-    background-color: red;
-    width: 70%;
-    height: 30%;
- }
- .box2{
-    background-color: green;
-    height: 30%;
-    width: 70%;
-    position:relative;
-    top: 20%;
-    left: 20%;
-    background: rgba(42, 187, 155, 0);
- }
- .box3{
-    background-color: blue;
-    height: 30%;
-    width: 70%;
- }
+  & img {
+    height: 200px;
+    width: 400px;
+  }
+  .footer-background {
+    position: relative;
+  }
+  .footer-media {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-media_social-links {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    & i {
+      padding: 5px;
+    }
+    & span {
+      padding: 5px;
+    }
+  }
+
+  .footer-info {
+    background-color: rgba(250, 250, 250, 0.4);
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & ul {
+       width: 100%;
+       display: flex;
+       list-style-type: disc;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+       padding-inline-start: 40px;
+       list-style: none;
+   
+    }
+
+    & ul > li > a {
+      color: #999;
+      text-decoration: none;
+      font-size: 9px;
+    }
+  }
 `;
