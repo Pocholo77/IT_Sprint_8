@@ -7,7 +7,7 @@ export const SignPopupStyled = styled.div`
   left: 50%;
   right: 50%;
   bottom: 30%;
-  z-index: 10;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   justify-content: center;
