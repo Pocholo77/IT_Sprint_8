@@ -9,5 +9,6 @@ export const ShipsStyled = styled.div`
 }
 button{
     width: 150px;
+    margin-bottom: 10px;
 }
 `;
