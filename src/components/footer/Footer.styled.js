@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.div`
   background-color: black;
+  position: relative;
   height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+  z-index: -1;
 
   & img {
     height: 200px;
