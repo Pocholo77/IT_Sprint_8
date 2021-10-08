@@ -7,13 +7,13 @@ export const SignPopupStyled = styled.div`
   left: 50%;
   right: 50%;
   bottom: 30%;
-  z-index: 99;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: yellow;
   border-radius: 2px;
+  z-index:2;
 
   .SignPopupContainer {
     background-color: #181615;
