@@ -1,4 +1,4 @@
-<img src='./assets/img/sw_logo_horiz.png'/>
+![sw_logo_stacked](https://user-images.githubusercontent.com/59293758/136673924-af35a6f4-d06f-4e7c-81d4-3f8d1d6668fb.png)
 # Star Wars Clone 
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
