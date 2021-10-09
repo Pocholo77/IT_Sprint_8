@@ -31,7 +31,7 @@ export const FooterStyled = styled.div`
   .footer-media_social-links {
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 
     & i {
@@ -40,6 +40,13 @@ export const FooterStyled = styled.div`
     & span {
       padding: 5px;
     }
+  }
+  .footer-media_kids{
+    height: 10px;
+    width: 30px; 
+    background-color: #999;
+    border-radius: 10px;
+    padding: 2px 
   }
 
   .footer-info {

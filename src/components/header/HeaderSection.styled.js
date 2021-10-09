@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const HeaderSection = styled.div`
   display: flex;
   align-items: center;
@@ -18,13 +19,17 @@ export const HeaderSection = styled.div`
   .social-links {
     display: flex;
     flex-direction: row;
+    align-items:center;
     padding-left: 50px;
+  }
+  .social-links__separator{
+    margin: 15px;
   }
   i {
     margin: 6px;
     font-size: 20px;
   }
-  img {
+  .header_logo {
     height: 88px;
     width: 203px;
   }
