@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SignPopupStyled = styled.div`
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 30%;
+  top: 35%;
   left: 50%;
   right: 50%;
   bottom: 30%;
