@@ -26,6 +26,7 @@ export const SignPopupStyled = styled.div`
   .SignPopupCloseButton{
     justify-content: flex-end;
     display: flex;
+    color: #999;
     & span:hover{
       color: white;
       cursor: pointer;
@@ -71,8 +72,10 @@ export const SignPopupStyled = styled.div`
   .FormHelp{
     
     width: 432px;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    font-weight: lighter;
     & span{
       margin: 2px;
     }

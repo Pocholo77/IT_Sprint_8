@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="footer-info">
           <h5>TM © Lucasfilm Ltd. All Rights Reserved</h5>
-          <ul id="footer-info__legal">
+          <ul id="footer-info_legal">
             <li>
               <a target="_blank" href="/">
                 Terms of Use

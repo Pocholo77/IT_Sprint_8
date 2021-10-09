@@ -16,7 +16,10 @@ export const FooterStyled = styled.div`
     width: 400px;
   }
   .footer-background {
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   .footer-media {
     background-color: transparent;
@@ -59,6 +62,11 @@ export const FooterStyled = styled.div`
     flex-direction: column;
     align-items: center;
 
+    #footer-info_legal{
+      display: flex;
+      justify-content: center;
+    }
+
     & ul {
        width: 100%;
        display: flex;
@@ -76,6 +84,7 @@ export const FooterStyled = styled.div`
       color: #999;
       text-decoration: none;
       font-size: 9px;
+      margin: 5px;
     }
   }
 `;

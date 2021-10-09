@@ -65,7 +65,7 @@ export default function SignPopup({ handleSignSubmit , handleSignClose }) {
             <button type="submit">Create Account</button>
           </form>
           <div className="FormHelp">
-           <h6>Already have an account?</h6><span>Need help signing in?</span>
+           <h6>Already have an account?</h6><span>Sign in?</span>
           </div>
         </div>
       </div>

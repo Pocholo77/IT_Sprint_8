@@ -20,13 +20,14 @@ export const LogPopupStyled = styled.div`
   .LogPopupHeader {
     margin: 0px 50px;
   }
-  .LogPopupCloseButton{
-    justify-content: flex-end;
+  .LogPopupCloseButton {
     display: flex;
-    & span:hover{
+    justify-content: flex-end;
+    color: #999;
+
+    & span:hover {
       color: white;
       cursor: pointer;
-
     }
   }
   .LogPopupFormTitle {
@@ -55,39 +56,37 @@ export const LogPopupStyled = styled.div`
       border-radius: 4px;
       width: 430px;
       border: 1px solid transparent;
-      background-color: #735E5E;
+      background-color: #735e5e;
     }
 
     & button:hover {
       background-color: #3eabd0;
     }
-
   }
-  .FormHelp{
-    
+  .FormHelp {
     width: 432px;
     justify-content: flex-end;
     display: flex;
-    & span{
-      margin:2px;
+
+    & span {
+      margin: 2px;
     }
-    & span:hover{
+    & span:hover {
       text-decoration: underline;
     }
-
   }
-  .LogPopupForm_ButtonCreateAccount{
-      padding: 10px 15px;
-      margin-top: 5px;
-      font-size: 20px;
-      border-radius: 4px;
-      width: 430px;
-      border: 1px solid transparent;
-      background-color: transparent;
-      color:yellow;
-      align-self: center;
-    }
-    .LogPopupForm_ButtonCreateAccount:hover{
-      border: 1px solid yellow;
-    }
+  .LogPopupForm_ButtonCreateAccount {
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 430px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: yellow;
+    align-self: center;
+  }
+  .LogPopupForm_ButtonCreateAccount:hover {
+    border: 1px solid yellow;
+  }
 `;
