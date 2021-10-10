@@ -3,17 +3,18 @@ import styled from "styled-components";
 export const SignPopupStyled = styled.div`
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 35%;
-  left: 50%;
-  right: 50%;
-  bottom: 30%;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: yellow;
   border-radius: 2px;
-  z-index:2;
+  z-index: 2;
+
+  input{
+    height: 10px;
+  }
 
   .SignPopupContainer {
     background-color: #181615;

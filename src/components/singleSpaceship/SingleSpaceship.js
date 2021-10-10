@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SingleSpaceshipStyled } from "./SingleSpaceship.styled";
 import { Fragment } from "react/cjs/react.production.min";
+import imageShip from "../../maps/spaceships";
 
 export default function SingleSpaceship({
   name,
@@ -20,17 +21,21 @@ export default function SingleSpaceship({
   return (
     <SingleSpaceshipStyled>
       <li onClick={handleOnclick}>
-        <h3 style={{margin:10}}>{name}</h3>
+        <h3>{name}</h3>
         <span>Model: {model}</span>
         {open && (
           <Fragment>
-            <span>Manufacturer: {manufacturer}</span>
-            <span>Cost in redits: {cost_in_credits}</span>
-            <span>Length: {length}</span>
-            <span>Crew: {crew}</span>
-            <span>Passengers: {passengers}</span>
+            <div className="Ship-detail">
+              <img src={imageShip[name]} alt="" />
+              <div className="Ship-detail-info">
+                <span>Manufacturer: {manufacturer}</span>
+                <span>Cost in redits: {cost_in_credits}</span>
+                <span>Length: {length}</span>
+                <span>Crew: {crew}</span>
+                <span>Passengers: {passengers}</span>
+              </div>
+            </div>
           </Fragment>
-          
         )}
       </li>
     </SingleSpaceshipStyled>

@@ -12,6 +12,10 @@ export const LogPopupStyled = styled.div`
   color: yellow;
   border-radius: 2px;
 
+  input{
+    height: 10px;
+  }
+
   .LogPopupContainer {
     background-color: #181615;
     height: 484px;
