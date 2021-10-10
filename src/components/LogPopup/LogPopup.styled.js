@@ -47,8 +47,9 @@ export const LogPopupStyled = styled.div`
     & input {
       padding: 10px 15px;
       margin: 5px 0px;
-      font-size: 20px;
+      font-size: 13px;
       border-radius: 4px;
+      height: 15px;
       width: 400px;
       border: 1px solid transparent;
     }
