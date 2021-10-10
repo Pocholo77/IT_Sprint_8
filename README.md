@@ -5,6 +5,8 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 Consuming data from Api https://swapi.dev/ , showing ships info cards. 
 
+The images of the ships were taken from https://starwars.fandom.com/ and they're available just in some ships, in a sample mode , 
+
 ## Available Scripts
 
 In the project directory, you can run:
